@@ -23,7 +23,7 @@ featurecounts(){
     start_featurecounts=`date +%s`
     featureCounts -T $threads -p -a $ref_gtf -o $output $bamfile 
     stop_featurecounts=`date +%s`
-    echo $bamfilename","$((stop_featurecounts-start_featurecounts))",\n" >> "$path_to_time_stats"time_featurecounts.csv
+    echo $bamfilename","$((stop_featurecounts-start_featurecounts)) >> "$path_to_time_stats"time_featurecounts.csv
 }
 
 "$@"
