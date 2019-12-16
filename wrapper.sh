@@ -11,4 +11,5 @@ for i in ../data/fastq/*_1.fastq;
 do
     filename=`echo $i |awk -F/ '{print $NF}' |  awk 'gsub("_1.fastq","")'` 
     ./cell_level_analysis.sh $ref_gtf $ref_fasta $filename
+    exit
 done
