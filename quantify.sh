@@ -23,7 +23,12 @@ featurecounts(){
     start_featurecounts=`date +%s`
     featureCounts -T $threads -p -a $ref_gtf -o $output $bamfile 
     stop_featurecounts=`date +%s`
-    echo $bamfilename","$((stop_featurecounts-start_featurecounts)) >> "$path_to_time_stats"time_featurecounts.csv
+    time_file="$path_to_time_stats"time_featurecounts.csv
+    # check if time file of feature counts exist, if not, add header
+    if [ ! -f "$time_file" ]; then
+        echo 'filename,time' >> $time_file
+    fi
+    echo $bamfilename","$((stop_featurecounts-start_featurecounts)) >> $time_file
 }
 
 "$@"

@@ -46,7 +46,12 @@ star_mapping(){
          -o ""$output"Aligned.toTranscriptome.sortedByCoord.out.bam"
      samtools index -@ 20 ""$output"Aligned.toTranscriptome.sortedByCoord.out.bam"
 #    stop_STAR=`date +%s`
-#    echo $filename","$((stop_STAR-start_STAR)) >> "$path_to_time_stats"time_STAR.csv
+    time_file="$path_to_time_stats"time_STAR.csv
+    # check if time file exist. if not, add header
+    if [ ! -f $time_file ]; then
+        echo 'filename,time' >> $time_file
+    fi
+#    echo $filename","$((stop_STAR-start_STAR)) >> $time_file 
 }
 
 
