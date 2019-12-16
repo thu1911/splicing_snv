@@ -1,0 +1,291 @@
+STAR version=2.7.3a
+STAR compilation time,server,dir=Tue Oct 8 14:26:19 EDT 2019 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+##### Command Line:
+STAR --runThreadN 30 --runMode genomeGenerate --genomeDir ../data/index/star/ --genomeFastaFiles /data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa --sjdbGTFfile /data8t/mtx/useful_data/mouse/mm10_ERCC/gencodevM23annotation_ERCC.gtf --sjdbOverhang 100
+##### Initial USER parameters from Command Line:
+###### All USER parameters from Command Line:
+runThreadN                    30     ~RE-DEFINED
+runMode                       genomeGenerate     ~RE-DEFINED
+genomeDir                     ../data/index/star/     ~RE-DEFINED
+genomeFastaFiles              /data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa        ~RE-DEFINED
+sjdbGTFfile                   /data8t/mtx/useful_data/mouse/mm10_ERCC/gencodevM23annotation_ERCC.gtf     ~RE-DEFINED
+sjdbOverhang                  100     ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runMode                           genomeGenerate
+runThreadN                        30
+genomeDir                         ../data/index/star/
+genomeFastaFiles                  /data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa   
+sjdbGTFfile                       /data8t/mtx/useful_data/mouse/mm10_ERCC/gencodevM23annotation_ERCC.gtf
+sjdbOverhang                      100
+
+-------------------------------
+##### Final effective command line:
+STAR   --runMode genomeGenerate   --runThreadN 30   --genomeDir ../data/index/star/   --genomeFastaFiles /data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa      --sjdbGTFfile /data8t/mtx/useful_data/mouse/mm10_ERCC/gencodevM23annotation_ERCC.gtf   --sjdbOverhang 100
+----------------------------------------
+
+Finished loading and checking parameters
+Dec 10 22:15:35 ... starting to generate Genome files
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 0  "chr10" chrStart: 0
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 1  "chr11" chrStart: 130809856
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 2  "chr12" chrStart: 252968960
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 3  "chr13" chrStart: 373293056
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 4  "chr14" chrStart: 493879296
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 5  "chr15" chrStart: 618921984
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 6  "chr16" chrStart: 722993152
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 7  "chr17" chrStart: 821297152
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 8  "chr18" chrStart: 916455424
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 9  "chr19" chrStart: 1007419392
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 10  "chr1" chrStart: 1069023232
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 11  "chr2" chrStart: 1264582656
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 12  "chr3" chrStart: 1446772736
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 13  "chr4" chrStart: 1606942720
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 14  "chr5" chrStart: 1763704832
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 15  "chr6" chrStart: 1915748352
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 16  "chr7" chrStart: 2065694720
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 17  "chr8" chrStart: 2211184640
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 18  "chr9" chrStart: 2340683776
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 19  "chrM" chrStart: 2465464320
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 20  "chrX" chrStart: 2465726464
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 21  "chrY" chrStart: 2636906496
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 22  "ERCC-00002" chrStart: 2728656896
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 23  "ERCC-00003" chrStart: 2728919040
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 24  "ERCC-00004" chrStart: 2729181184
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 25  "ERCC-00009" chrStart: 2729443328
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 26  "ERCC-00012" chrStart: 2729705472
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 27  "ERCC-00013" chrStart: 2729967616
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 28  "ERCC-00014" chrStart: 2730229760
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 29  "ERCC-00016" chrStart: 2730491904
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 30  "ERCC-00017" chrStart: 2730754048
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 31  "ERCC-00019" chrStart: 2731016192
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 32  "ERCC-00022" chrStart: 2731278336
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 33  "ERCC-00024" chrStart: 2731540480
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 34  "ERCC-00025" chrStart: 2731802624
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 35  "ERCC-00028" chrStart: 2732064768
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 36  "ERCC-00031" chrStart: 2732326912
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 37  "ERCC-00033" chrStart: 2732589056
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 38  "ERCC-00034" chrStart: 2732851200
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 39  "ERCC-00035" chrStart: 2733113344
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 40  "ERCC-00039" chrStart: 2733375488
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 41  "ERCC-00040" chrStart: 2733637632
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 42  "ERCC-00041" chrStart: 2733899776
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 43  "ERCC-00042" chrStart: 2734161920
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 44  "ERCC-00043" chrStart: 2734424064
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 45  "ERCC-00044" chrStart: 2734686208
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 46  "ERCC-00046" chrStart: 2734948352
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 47  "ERCC-00048" chrStart: 2735210496
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 48  "ERCC-00051" chrStart: 2735472640
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 49  "ERCC-00053" chrStart: 2735734784
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 50  "ERCC-00054" chrStart: 2735996928
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 51  "ERCC-00057" chrStart: 2736259072
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 52  "ERCC-00058" chrStart: 2736521216
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 53  "ERCC-00059" chrStart: 2736783360
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 54  "ERCC-00060" chrStart: 2737045504
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 55  "ERCC-00061" chrStart: 2737307648
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 56  "ERCC-00062" chrStart: 2737569792
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 57  "ERCC-00067" chrStart: 2737831936
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 58  "ERCC-00069" chrStart: 2738094080
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 59  "ERCC-00071" chrStart: 2738356224
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 60  "ERCC-00073" chrStart: 2738618368
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 61  "ERCC-00074" chrStart: 2738880512
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 62  "ERCC-00075" chrStart: 2739142656
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 63  "ERCC-00076" chrStart: 2739404800
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 64  "ERCC-00077" chrStart: 2739666944
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 65  "ERCC-00078" chrStart: 2739929088
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 66  "ERCC-00079" chrStart: 2740191232
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 67  "ERCC-00081" chrStart: 2740453376
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 68  "ERCC-00083" chrStart: 2740715520
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 69  "ERCC-00084" chrStart: 2740977664
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 70  "ERCC-00085" chrStart: 2741239808
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 71  "ERCC-00086" chrStart: 2741501952
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 72  "ERCC-00092" chrStart: 2741764096
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 73  "ERCC-00095" chrStart: 2742026240
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 74  "ERCC-00096" chrStart: 2742288384
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 75  "ERCC-00097" chrStart: 2742550528
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 76  "ERCC-00098" chrStart: 2742812672
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 77  "ERCC-00099" chrStart: 2743074816
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 78  "ERCC-00104" chrStart: 2743336960
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 79  "ERCC-00108" chrStart: 2743599104
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 80  "ERCC-00109" chrStart: 2743861248
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 81  "ERCC-00111" chrStart: 2744123392
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 82  "ERCC-00112" chrStart: 2744385536
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 83  "ERCC-00113" chrStart: 2744647680
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 84  "ERCC-00116" chrStart: 2744909824
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 85  "ERCC-00117" chrStart: 2745171968
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 86  "ERCC-00120" chrStart: 2745434112
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 87  "ERCC-00123" chrStart: 2745696256
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 88  "ERCC-00126" chrStart: 2745958400
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 89  "ERCC-00130" chrStart: 2746220544
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 90  "ERCC-00131" chrStart: 2746482688
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 91  "ERCC-00134" chrStart: 2746744832
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 92  "ERCC-00136" chrStart: 2747006976
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 93  "ERCC-00137" chrStart: 2747269120
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 94  "ERCC-00138" chrStart: 2747531264
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 95  "ERCC-00142" chrStart: 2747793408
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 96  "ERCC-00143" chrStart: 2748055552
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 97  "ERCC-00144" chrStart: 2748317696
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 98  "ERCC-00145" chrStart: 2748579840
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 99  "ERCC-00147" chrStart: 2748841984
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 100  "ERCC-00148" chrStart: 2749104128
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 101  "ERCC-00150" chrStart: 2749366272
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 102  "ERCC-00154" chrStart: 2749628416
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 103  "ERCC-00156" chrStart: 2749890560
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 104  "ERCC-00157" chrStart: 2750152704
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 105  "ERCC-00158" chrStart: 2750414848
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 106  "ERCC-00160" chrStart: 2750676992
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 107  "ERCC-00162" chrStart: 2750939136
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 108  "ERCC-00163" chrStart: 2751201280
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 109  "ERCC-00164" chrStart: 2751463424
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 110  "ERCC-00165" chrStart: 2751725568
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 111  "ERCC-00168" chrStart: 2751987712
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 112  "ERCC-00170" chrStart: 2752249856
+/data8t/mtx/useful_data/mouse/mm10_ERCC/mm10_ERCC.fa : chr # 113  "ERCC-00171" chrStart: 2752512000
+Estimated genome size=2953774144   2752774144   201000000
+GstrandBit=32
+Number of SA indices: 5295240970
+Dec 10 22:16:39 ... starting to sort Suffix Array. This may take a long time...
+Number of chunks: 104;   chunks size limit: 509888624 bytes
+Dec 10 22:16:54 ... sorting Suffix Array chunks and saving them to disk...
+Writing 201915832 bytes into ../data/index/star//SA_5 ; empty space on disk = 3210164158464 bytes ... done
+Writing 172335360 bytes into ../data/index/star//SA_29 ; empty space on disk = 3209962242048 bytes ... done
+Writing 238240632 bytes into ../data/index/star//SA_1 ; empty space on disk = 3209789902848 bytes ... done
+Writing 310178600 bytes into ../data/index/star//SA_23 ; empty space on disk = 3209551659008 bytes ... done
+Writing 353695544 bytes into ../data/index/star//SA_15 ; empty space on disk = 3209241477120 bytes ... done
+Writing 384108096 bytes into ../data/index/star//SA_18 ; empty space on disk = 3208887779328 bytes ... done
+Writing 309878264 bytes into ../data/index/star//SA_2 ; empty space on disk = 3208503668736 bytes ... done
+Writing 438480976 bytes into ../data/index/star//SA_4 ; empty space on disk = 3208193789952 bytes ... done
+Writing 489344720 bytes into ../data/index/star//SA_10 ; empty space on disk = 3207755304960 bytes ... done
+Writing 421798720 bytes into ../data/index/star//SA_7 ; empty space on disk = 3207265959936 bytes ... done
+Writing 430409952 bytes into ../data/index/star//SA_27 ; empty space on disk = 3206844157952 bytes ... done
+Writing 420896008 bytes into ../data/index/star//SA_8 ; empty space on disk = 3206413746176 bytes ... done
+Writing 389681808 bytes into ../data/index/star//SA_28 ; empty space on disk = 3205992849408 bytes ...Writing 331320704 bytes into ../data/index/star//SA_21 ; empty space on disk = 3205856673792 bytes ... done
+ done
+Writing 365299768 bytes into ../data/index/star//SA_26 ; empty space on disk = 3205271842816 bytes ... done
+Writing 509898880 bytes into ../data/index/star//SA_0 ; empty space on disk = 3204906541056 bytes ... done
+Writing 384845328 bytes into ../data/index/star//SA_25 ; empty space on disk = 3204396638208 bytes ... done
+Writing 481197584 bytes into ../data/index/star//SA_11 ; empty space on disk = 3204011790336 bytes ... done
+Writing 352339848 bytes into ../data/index/star//SA_3 ; empty space on disk = 3203530592256 bytes ... done
+Writing 389693696 bytes into ../data/index/star//SA_13 ; empty space on disk = 3203178250240 bytes ... done
+Writing 478461896 bytes into ../data/index/star//SA_6 ; empty space on disk = 3202788552704 bytes ... done
+Writing 394952384 bytes into ../data/index/star//SA_14 ; empty space on disk = 3202310090752 bytes ... done
+Writing 469370968 bytes into ../data/index/star//SA_24 ; empty space on disk = 3201915133952 bytes ... done
+Writing 440460696 bytes into ../data/index/star//SA_17 ; empty space on disk = 3201445748736 bytes ... done
+Writing 420255976 bytes into ../data/index/star//SA_19 ; empty space on disk = 3201005285376 bytes ... done
+Writing 452439400 bytes into ../data/index/star//SA_22 ; empty space on disk = 3200585023488 bytes ... done
+Writing 493461384 bytes into ../data/index/star//SA_9 ; empty space on disk = 3200132583424 bytes ... done
+Writing 471648352 bytes into ../data/index/star//SA_16 ; empty space on disk = 3199639113728 bytes ... done
+Writing 505331328 bytes into ../data/index/star//SA_20 ; empty space on disk = 3199167459328 bytes ... done
+Writing 501123744 bytes into ../data/index/star//SA_12 ; empty space on disk = 3198662111232 bytes ... done
+Writing 352341888 bytes into ../data/index/star//SA_30 ; empty space on disk = 3198160961536 bytes ... done
+Writing 366100200 bytes into ../data/index/star//SA_32 ; empty space on disk = 3197808619520 bytes ... done
+Writing 373952808 bytes into ../data/index/star//SA_37 ; empty space on disk = 3197442519040 bytes ... done
+Writing 380842368 bytes into ../data/index/star//SA_36 ; empty space on disk = 3197068562432 bytes ... done
+Writing 428150928 bytes into ../data/index/star//SA_31 ; empty space on disk = 3196687716352 bytes ... done
+Writing 410482384 bytes into ../data/index/star//SA_35 ; empty space on disk = 3196259553280 bytes ... done
+Writing 422870808 bytes into ../data/index/star//SA_38 ; empty space on disk = 3195849068544 bytes ... done
+Writing 404029616 bytes into ../data/index/star//SA_40 ; empty space on disk = 3195426197504 bytes ... done
+Writing 493566696 bytes into ../data/index/star//SA_33 ; empty space on disk = 3195022163968 bytes ...Writing 394043728 bytes into ../data/index/star//SA_39 ; empty space on disk = 3194730127360 bytes ... done
+ done
+Writing 297416872 bytes into ../data/index/star//SA_47 ; empty space on disk = 3194134548480 bytes ... done
+Writing 467418616 bytes into ../data/index/star//SA_34 ; empty space on disk = 3193837129728 bytes ... done
+Writing 327714832 bytes into ../data/index/star//SA_42 ; empty space on disk = 3193369702400 bytes ... done
+Writing 455163992 bytes into ../data/index/star//SA_41 ; empty space on disk = 3193041973248 bytes ... done
+Writing 415173384 bytes into ../data/index/star//SA_45 ; empty space on disk = 3192586805248 bytes ... done
+Writing 406564696 bytes into ../data/index/star//SA_48 ; empty space on disk = 3192171630592 bytes ... done
+Writing 440549952 bytes into ../data/index/star//SA_58 ; empty space on disk = 3191765065728 bytes ... done
+Writing 396617480 bytes into ../data/index/star//SA_50 ; empty space on disk = 3191324512256 bytes ... done
+Writing 399662272 bytes into ../data/index/star//SA_55 ; empty space on disk = 3190927892480 bytes ... done
+Writing 438186224 bytes into ../data/index/star//SA_59 ; empty space on disk = 3190528229376 bytes ... done
+Writing 453299960 bytes into ../data/index/star//SA_46 ; empty space on disk = 3190090039296 bytes ... done
+Writing 429948800 bytes into ../data/index/star//SA_57 ; empty space on disk = 3189636739072 bytes ... done
+Writing 444666048 bytes into ../data/index/star//SA_44 ; empty space on disk = 3189206790144 bytes ... done
+Writing 417155360 bytes into ../data/index/star//SA_53 ; empty space on disk = 3188762116096 bytes ...Writing 474644784 bytes into ../data/index/star//SA_49 ; empty space on disk = 3188762099712 bytes ... done
+ done
+Writing 447256728 bytes into ../data/index/star//SA_52 ; empty space on disk = 3187870302208 bytes ... done
+Writing 445019584 bytes into ../data/index/star//SA_54 ; empty space on disk = 3187423039488 bytes ... done
+Writing 495997600 bytes into ../data/index/star//SA_56 ; empty space on disk = 3186978017280 bytes ... done
+Writing 509188376 bytes into ../data/index/star//SA_43 ; empty space on disk = 3186482016256 bytes ... done
+Writing 503646968 bytes into ../data/index/star//SA_51 ; empty space on disk = 3185972826112 bytes ... done
+Writing 488865880 bytes into ../data/index/star//SA_60 ; empty space on disk = 3185469132800 bytes ... done
+Writing 344983904 bytes into ../data/index/star//SA_62 ; empty space on disk = 3184980262912 bytes ... done
+Writing 353982568 bytes into ../data/index/star//SA_61 ; empty space on disk = 3184635277312 bytes ... done
+Writing 391077008 bytes into ../data/index/star//SA_66 ; empty space on disk = 3184281292800 bytes ... done
+Writing 442750472 bytes into ../data/index/star//SA_69 ; empty space on disk = 3183890214912 bytes ... done
+Writing 445019584 bytes into ../data/index/star//SA_68 ; empty space on disk = 3183447457792 bytes ... done
+Writing 376852104 bytes into ../data/index/star//SA_71 ; empty space on disk = 3183002431488 bytes ... done
+Writing 477657664 bytes into ../data/index/star//SA_64 ; empty space on disk = 3182625579008 bytes ... done
+Writing 487815296 bytes into ../data/index/star//SA_67 ; empty space on disk = 3182147919872 bytes ... done
+Writing 494179224 bytes into ../data/index/star//SA_65 ; empty space on disk = 3181660102656 bytes ... done
+Writing 503876504 bytes into ../data/index/star//SA_70 ; empty space on disk = 3181165920256 bytes ... done
+Writing 504718816 bytes into ../data/index/star//SA_63 ; empty space on disk = 3180662042624 bytes ... done
+Writing 332963592 bytes into ../data/index/star//SA_77 ; empty space on disk = 3180157321216 bytes ... done
+Writing 427206936 bytes into ../data/index/star//SA_72 ; empty space on disk = 3179824340992 bytes ...Writing 312102976 bytes into ../data/index/star//SA_84 ; empty space on disk = 3179824308224 bytes ... done
+ done
+Writing 277905280 bytes into ../data/index/star//SA_83 ; empty space on disk = 3179085025280 bytes ... done
+Writing 368558208 bytes into ../data/index/star//SA_87 ; empty space on disk = 3178807119872 bytes ... done
+Writing 365587536 bytes into ../data/index/star//SA_89 ; empty space on disk = 3178438557696 bytes ... done
+Writing 391555304 bytes into ../data/index/star//SA_79 ; empty space on disk = 3178072969216 bytes ... done
+Writing 379186760 bytes into ../data/index/star//SA_76 ; empty space on disk = 3177681412096 bytes ... done
+Writing 369144104 bytes into ../data/index/star//SA_73 ; empty space on disk = 3177302220800 bytes ... done
+Writing 397449184 bytes into ../data/index/star//SA_85 ; empty space on disk = 3176933060608 bytes ... done
+Writing 438313392 bytes into ../data/index/star//SA_75 ; empty space on disk = 3176535601152 bytes ... done
+Writing 270439816 bytes into ../data/index/star//SA_92 ; empty space on disk = 3176097284096 bytes ... done
+Writing 449901872 bytes into ../data/index/star//SA_88 ; empty space on disk = 3175826841600 bytes ... done
+Writing 414721048 bytes into ../data/index/star//SA_86 ; empty space on disk = 3175376936960 bytes ... done
+Writing 2840 bytes into ../data/index/star//SA_103 ; empty space on disk = 3174962212864 bytes ... done
+Writing 441187032 bytes into ../data/index/star//SA_80 ; empty space on disk = 3174962208768 bytes ... done
+Writing 472439176 bytes into ../data/index/star//SA_78 ; empty space on disk = 3174521020416 bytes ... done
+Writing 507156024 bytes into ../data/index/star//SA_81 ; empty space on disk = 3174048579584 bytes ... done
+Writing 487815296 bytes into ../data/index/star//SA_74 ; empty space on disk = 3173541408768 bytes ... done
+Writing 393202960 bytes into ../data/index/star//SA_90 ; empty space on disk = 3173053591552 bytes ... done
+Writing 498807224 bytes into ../data/index/star//SA_82 ; empty space on disk = 3172660387840 bytes ... done
+Writing 494390144 bytes into ../data/index/star//SA_91 ; empty space on disk = 3172161576960 bytes ... done
+Writing 289541776 bytes into ../data/index/star//SA_101 ; empty space on disk = 3171667185664 bytes ... done
+Writing 306842480 bytes into ../data/index/star//SA_100 ; empty space on disk = 3171377614848 bytes ... done
+Writing 304074240 bytes into ../data/index/star//SA_99 ; empty space on disk = 3171070771200 bytes ... done
+Writing 356101560 bytes into ../data/index/star//SA_97 ; empty space on disk = 3170766696448 bytes ... done
+Writing 384451728 bytes into ../data/index/star//SA_93 ; empty space on disk = 3170410594304 bytes ... done
+Writing 377511544 bytes into ../data/index/star//SA_96 ; empty space on disk = 3170026135552 bytes ... done
+Writing 411899312 bytes into ../data/index/star//SA_94 ; empty space on disk = 3169648623616 bytes ... done
+Writing 438149568 bytes into ../data/index/star//SA_98 ; empty space on disk = 3169236721664 bytes ... done
+Writing 486900544 bytes into ../data/index/star//SA_95 ; empty space on disk = 3168798568448 bytes ... done
+Writing 509898880 bytes into ../data/index/star//SA_102 ; empty space on disk = 3168311660544 bytes ... done
+Dec 10 22:28:11 ... loading chunks from disk, packing SA...
+Dec 10 22:32:32 ... finished generating suffix array
+Dec 10 22:32:32 ... generating Suffix Array index
+Dec 10 22:36:23 ... completed Suffix Array index
+Dec 10 22:36:23 ..... processing annotations GTF
+Processing pGe.sjdbGTFfile=/data8t/mtx/useful_data/mouse/mm10_ERCC/gencodevM23annotation_ERCC.gtf, found:
+		142443 transcripts
+		841698 exons (non-collapsed)
+		284809 collapsed junctions
+Dec 10 22:36:37 ..... finished GTF processing
+Dec 10 22:36:37   Loaded database junctions from the GTF file: /data8t/mtx/useful_data/mouse/mm10_ERCC/gencodevM23annotation_ERCC.gtf: 284809 total junctions
+
+WARNING: long repeat for junction # 46500 : chr13 36008518 36189203; left shift = 255; right shift = 29
+WARNING: long repeat for junction # 54028 : chr13 119495135 119609191; left shift = 36; right shift = 255
+WARNING: long repeat for junction # 196705 : chr5 112774527 112775017; left shift = 255; right shift = 69
+WARNING: long repeat for junction # 199061 : chr5 123190235 123190960; left shift = 255; right shift = 19
+WARNING: long repeat for junction # 208156 : chr6 48754635 48755196; left shift = 81; right shift = 255
+WARNING: long repeat for junction # 240097 : chr7 141808196 141810304; left shift = 255; right shift = 255
+Dec 10 22:36:38   Finished preparing junctions
+Dec 10 22:36:38 ..... inserting junctions into the genome indices
+Dec 10 22:37:02   Finished SA search: number of new junctions=284744, old junctions=0
+Dec 10 22:37:37   Finished sorting SA indicesL nInd=113897020
+Genome size with junctions=2810007688  2752774144   57233544
+GstrandBit1=32   GstrandBit=32
+Dec 10 22:38:52   Finished inserting junction indices
+Dec 10 22:39:20   Finished SAi
+Dec 10 22:39:20 ..... finished inserting junctions into genome
+Dec 10 22:39:20 ... writing Genome to disk ...
+Writing 2810007688 bytes into ../data/index/star//Genome ; empty space on disk = 3210085376000 bytes ... done
+SA size in bytes: 22312694212
+Dec 10 22:39:24 ... writing Suffix Array to disk ...
+Writing 22312694212 bytes into ../data/index/star//SA ; empty space on disk = 3207275360256 bytes ... done
+Dec 10 22:42:03 ... writing SAindex to disk
+Writing 8 bytes into ../data/index/star//SAindex ; empty space on disk = 3184962658304 bytes ... done
+Writing 120 bytes into ../data/index/star//SAindex ; empty space on disk = 3184962658304 bytes ... done
+Writing 1565873491 bytes into ../data/index/star//SAindex ; empty space on disk = 3184962658304 bytes ... done
+Dec 10 22:42:17 ..... finished successfully
+DONE: Genome generation, EXITING
