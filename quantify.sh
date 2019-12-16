@@ -9,7 +9,7 @@ featurecounts(){
     subfix='Aligned.sortedByCoord.out.bam'
     bamfile="$path_to_bam_file""$bamfilename""$subfix"
     threads=30
-    path_to_quantification_stats="../data/quantification_stats/"
+    path_to_quantification_stats="../data/quantification_stats/cell_level_files"
     # check if path of output of featurecounts exist
     if [ ! -d "$path_to_quantification_stats" ]; then
         mkdir -p $path_to_quantification_stats
