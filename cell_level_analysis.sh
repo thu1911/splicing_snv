@@ -5,11 +5,13 @@
 #2nd parameter: fasta
 #3rd parameter: cell name without location
 
-filename=$1
+ref_gtf=$1
+ref_fasta=$2
+filename=$3
 
 # mapping
-./mapping.sh star_mapping $filename
+# ./mapping.sh star_mapping $filename
 
 # quantify
-./quantify.sh featureCounts  
+./quantify.sh featureCounts $ref_gtf $filename 
 
