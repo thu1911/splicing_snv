@@ -32,12 +32,12 @@ star_mapping(){
     fastq1="$path_to_fastq""$filename"_1.fastq
     fastq2="$path_to_fastq""$filename"_2.fastq
     output="$path_to_bam""$filename"
-#    start_STAR=`date +%s`
-#    STAR --runThreadN 20 --genomeDir "$path_to_star_index" \
-#        --readFilesIn $fastq1 $fastq2 \
-#        --outSAMtype BAM SortedByCoordinate \
-#        --outFileNamePrefix $output \
-#        --quantMode TranscriptomeSAM 
+    start_STAR=`date +%s`
+    STAR --runThreadN 20 --genomeDir "$path_to_star_index" \
+        --readFilesIn $fastq1 $fastq2 \
+        --outSAMtype BAM SortedByCoordinate \
+        --outFileNamePrefix $output \
+        --quantMode TranscriptomeSAM 
      samtools index -@ 20 ""$output"Aligned.sortedByCoord.out.bam"
 
     # this part is for quantmode, we need to sort and index it
@@ -45,13 +45,13 @@ star_mapping(){
          -T ""$output"tmp" \
          -o ""$output"Aligned.toTranscriptome.sortedByCoord.out.bam"
      samtools index -@ 20 ""$output"Aligned.toTranscriptome.sortedByCoord.out.bam"
-#    stop_STAR=`date +%s`
+    stop_STAR=`date +%s`
     time_file="$path_to_time_stats"time_STAR.csv
     # check if time file exist. if not, add header
     if [ ! -f $time_file ]; then
         echo 'filename,time' >> $time_file
     fi
-#    echo $filename","$((stop_STAR-start_STAR)) >> $time_file 
+    echo $filename","$((stop_STAR-start_STAR)) >> $time_file 
 }
 
 
