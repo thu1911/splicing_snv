@@ -1,5 +1,4 @@
 #!/bin/bash
-set -x
 star_statistic(){
     # this function is for calculate the metrics in log.final.out
     path_to_output='../data/mapping_stat/'
@@ -55,6 +54,31 @@ featurecounts_statistic(){
     # 1st parameter is input folder
     # 2nd parameter is output file name with location
     python ./generate_gene_expression_matrix.py "$path_to_input" "$outputfile_gene_expression"
+    # feature summary matrix
+    if [ ! -f "$outputfile_featurecounts_summary" ]; then
+        echo 'no feature summary CSV. Build a new one!'
+        echo 'Filename,Assigned,Unassigned_Unmapped,Unassigned_Read_Type,Unassigned_Singleton,Unassigned_MappingQuality,Unassigned_Chimera,Unassigned_FragmentLength,Unassigned_Duplicate,Unassigned_MultiMapping,Unassigned_Secondary,Unassigned_NonSplit,Unassigned_NoFeatures,Unassigned_Overlapping_Length,Unassigned_Ambiguity' >> "$outputfile_featurecounts_summary"
+    fi
+    for i in "$path_to_input"*.featurecounts.summary ;
+    do
+        Filename=`echo $i | awk -F/ '{print $NF}'|awk '{gsub(".featurecounts.summary", "");print}'`
+        Assigned=`cat $i | grep "Assigned" | awk '{print $NF}'`
+        Unassigned_Unmapped=`cat $i | grep "Unassigned_Unmapped" | awk '{print $NF}'`
+        Unassigned_Read_Type=`cat $i | grep "Unassigned_Read_Type" | awk '{print $NF}'`
+        Unassigned_Singleton=`cat $i | grep "Unassigned_Singleton" | awk '{print $NF}'`
+        Unassigned_MappingQuality=`cat $i | grep "Unassigned_MappingQuality" | awk '{print $NF}'`
+        Unassigned_Chimera=`cat $i | grep "Unassigned_Chimera" | awk '{print $NF}'`
+        Unassigned_FragmentLength=`cat $i | grep "Unassigned_FragmentLength" | awk '{print $NF}'`
+        Unassigned_Duplicate=`cat $i | grep "Unassigned_Duplicate" | awk '{print $NF}'`
+        Unassigned_MultiMapping=`cat $i | grep "Unassigned_MultiMapping" | awk '{print $NF}'`
+        Unassigned_Secondary=`cat $i | grep "Unassigned_Secondary" | awk '{print $NF}'`
+        Unassigned_NonSplit=`cat $i | grep "Unassigned_NonSplit" | awk '{print $NF}'`
+        Unassigned_NoFeatures=`cat $i | grep "Unassigned_NoFeatures" | awk '{print $NF}'`
+        Unassigned_Overlapping_Length=`cat $i | grep "Unassigned_Overlapping_Length" | awk '{print $NF}'`
+        Unassigned_Ambiguity=`cat $i | grep "Unassigned_Ambiguity" | awk '{print $NF}'`
+        echo $Filename","$Assigned","$Unassigned_Unmapped","$Unassigned_Read_Type","$Unassigned_Singleton","$Unassigned_MappingQuality","$Unassigned_Chimera","$Unassigned_FragmentLength","$Unassigned_Duplicate","$Unassigned_MultiMapping","$Unassigned_Secondary","$Unassigned_NonSplit","$Unassigned_NoFeatures","$Unassigned_Overlapping_Length","$Unassigned_Ambiguity >> "$outputfile_featurecounts_summary"
+    done
+
 }
 
 "$@"
