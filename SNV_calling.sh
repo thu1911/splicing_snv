@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x
+# set -x
 # this code is for calling snv
 # at least 2 parameters
 # 1st arg, gtf file
@@ -50,16 +50,13 @@ if [ ! -f $ref_fasta_dict ]; then
     java -jar $picard CreateSequenceDictionary R=$ref_fasta
 fi
 
-
 # Start real work
-if [ -d $path_to_output ]; then
-    mkdir -p $path_to_output
-fi
 start_GATK=`date +%s`
-in_bam="$path_to_bam""$filename"Aligned.sortedByCoord.out.bam
+##########
+if false; then
 # add read group
-addrg_bam="$path_to_cell_level_snv""$filename"'_rg.bam'
-dedup_bam="$path_to_cell_level_snv""$filename"'_sortByCoord_dedup.bam'
+in_bam="$path_to_bam""$filename"Aligned.sortedByCoord.out.bam
+addrg_bam="$path_to_cell_level_snv""$filename"'_sort_rg.bam'
 myRGID="$filename"'_RGID'
 myRGLB=$filename
 myRGPU=$filename
@@ -72,9 +69,28 @@ java -jar $picard AddOrReplaceReadGroups \
     RGPL=illumina \
     RGPU=$myRGPU \
     RGSM=$myRGSM
-    stop_GATK=`date +%s`
-echo $filename","$((stop_GATK-start_GATK)) >> $gatk_time_stats
+# markduplicates
+dedup_bam="$path_to_cell_level_snv""$filename"'_sort_rg_dedup.bam'
+metrics="$path_to_cell_level_snv""$filename"'_metrics.txt'
+java -jar $picard MarkDuplicates \
+    INPUT=$addrg_bam \
+    OUTPUT=$dedup_bam \
+    METRICS_FILE=$metrics
+###############
+fi
+# split N CIGAR for RNA
+split_bam="$path_to_cell_level_snv""$filename"'_sort_rg_dedup_split.bam'
+##############
+if false; then
+$gatk SplitNCigarReads -R $ref_fasta -I $dedup_bam -O $split_bam 
+##############
+fi
+# Base Quality Recalibration
+recal_table="$path_to_cell_level_snv""$filename"'_recal_table.txt'
+$gatk BaseRecalibrator -R $ref_fasta -I $split_bam -O $recal_table --known-sites $ref_snp
 
+stop_GATK=`date +%s`
+echo $filename","$((stop_GATK-start_GATK)) >> $gatk_time_stats
 
 
 
